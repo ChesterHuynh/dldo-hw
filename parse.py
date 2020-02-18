@@ -9,7 +9,7 @@ def parse_matrix(fpath):
     with open(fpath) as f:
         dists = f.read()
 
-    arr = np.fromstring(dists, sep=' ')  # Convert into 1D array
+    arr = np.fromstring(dists, sep=" ")  # Convert into 1D array
     arr = arr[np.nonzero(arr)]
     mat = squareform(arr)  # Convert to symmetric matrix
 
